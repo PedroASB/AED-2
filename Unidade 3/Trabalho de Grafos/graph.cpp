@@ -18,7 +18,7 @@ void Graph::addEdge(int source, int destination, int weight){
 	this->adjacencyLists[source].push_back({weight, destination});
 }
 
-int Graph::dijsktraAlgorithm(
+int Graph::dijkstraAlgorithm(
 	int source, int destination, 
 	std::vector<int> & distance, std::vector<int> & parents)
 {
