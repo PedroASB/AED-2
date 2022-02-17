@@ -19,8 +19,8 @@ class Graph {
 	// Basic Functions
 		void addEdge(int source, int destination, int weight);
 
-	// Djisktra Algorithm
-    int dijsktraAlgorithm(
+	// Dijkstra Algorithm
+    int dijkstraAlgorithm(
     	int source, int destination, 
     	std::vector<int> & distance,std::vector<int> & parents
     );
