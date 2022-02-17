@@ -43,12 +43,12 @@ int main(){
 		fill_n(distance.begin(), qtt_vertices, INF);
 		fill_n(parent.begin(), qtt_vertices, 0);
 
-		distance_bus = bus.dijsktraAlgorithm(source, destination, distance, parent);
+		distance_bus = bus.dijkstraAlgorithm(source, destination, distance, parent);
 
 		fill_n(distance.begin(), qtt_vertices, INF);
 		fill_n(parent.begin(), qtt_vertices, 0);
 
-		distance_plane = plane.dijsktraAlgorithm(source, destination, distance, parent);
+		distance_plane = plane.dijkstraAlgorithm(source, destination, distance, parent);
 
 		cout << min(distance_bus, distance_plane) << endl;
 	}
